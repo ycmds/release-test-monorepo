@@ -1,11 +1,11 @@
 {
   "name": "@macrobe/multiply",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+!",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
-   "scripts": {
+  "scripts": {
     "build:tsdown:release": "tsdown --out-dir lib",
     "build": "               npm run build:tsdown:release",
     "build:all": "           npm run build:bunup && npm run build:tsup && npm run build:tsdown && npm run build:tsc",
@@ -80,7 +80,7 @@
     ]
   },
   "///": "//////////========================/////////========================/////////========================/////////",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/ycmds/release-test-monorepo.git"
   },
