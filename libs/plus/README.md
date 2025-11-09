@@ -1,36 +1,68 @@
-# 🦠 MacroBE - Plus
+# @macrobe/plus
 
-[![NPM version](https://badgen.net/npm/v/@macrobe/parallel)](https://www.npmjs.com/package/@macrobe/parallel)
-[![Tests](https://github.com/ycmds/release-test/actions/workflows/release.yml/badge.svg)](https://github.com/ycmds/release-test/actions/workflows/release.yml)
+[![NPM version](https://badgen.net/npm/v/@macrobe/plus)](https://www.npmjs.com/package/@macrobe/plus)
+[![Tests](https://github.com/ycmds/release-test-monorepo/actions/workflows/release.yml/badge.svg)](https://github.com/ycmds/release-test-monorepo/actions/workflows/release.yml)
 [![TypeScript + ESM](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://www.typescriptlang.org/)
-[![Install size](https://packagephobia.now.sh/badge?p=@macrobe/parallel)](https://packagephobia.now.sh/result?p=@macrobe/parallel)
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/@macrobe/parallel.svg)](https://bundlephobia.com/result?p=@macrobe/parallel)
-[![License](https://badgen.net/github/license/ycmds/release-test)](https://github.com/ycmds/release-test/blob/main/LICENSE)
+[![Install size](https://packagephobia.com/badge?p=@macrobe/plus)](https://packagephobia.com/result?p=@macrobe/plus)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/@macrobe/plus.svg)](https://bundlephobia.com/result?p=@macrobe/plus)
+[![License](https://badgen.net/github/license/ycmds/release-test-monorepo)](https://github.com/ycmds/release-test-monorepo/blob/main/LICENSE)
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
 
+> Part of [@macrobe](https://github.com/ycmds/release-test-monorepo) monorepo
 
 <div align="center">
-  <p><strong>❤️‍🔥 The BEST modern 2026 example of release tools for nano libraries</strong></p>
+  <p><strong>Simple plus utility function for TypeScript</strong></p>
 </div>
 
-
-**🚀 Modern**: Built with ESM modules and TypeScript    
-**🪶 Lightweight**: Tree-shakable functions for optimal bundle size (~0.4kb)   
-**💪 Type-safe**: Full TypeScript support with comprehensive type definitions    
-**⚡ Fast**: Optimized algorithms for maximum performance    
-**🎯 Focused**: Essential async utilities without bloat    
+**🚀 Modern**: Built with ESM modules and TypeScript  
+**🪶 Lightweight**: Tree-shakable functions for optimal bundle size  
+**💪 Type-safe**: Full TypeScript support with comprehensive type definitions  
+**⚡ Fast**: Optimized algorithms for maximum performance  
 **📦 Zero Dependencies**: No external dependencies  
 
-```ts
-import { map } from '@macrobe/parallel';
+## 📦 Installation
 
-const results = await map([1, 2, 3], async (num) => num * 2);
-// => [2, 4, 6]
+```bash
+npm install @macrobe/plus
+# or
+pnpm add @macrobe/plus
+# or
+yarn add @macrobe/plus
 ```
 
-## License
+## 🚀 Usage
 
-MIT © [Igor Suvorov](https://github.com/isuvorov) 
+```ts
+import { plus } from '@macrobe/plus';
+
+const result = plus(2, 3);
+// => 5
+
+const result2 = plus(10, -5);
+// => 5
+```
+
+## 📖 API
+
+### `plus(a: number, b: number): number`
+
+Adds two numbers together.
+
+**Parameters:**
+- `a` - First number
+- `b` - Second number
+
+**Returns:** Sum of `a` and `b`
+
+## 🔗 Links
+
+- [Monorepo](https://github.com/ycmds/release-test-monorepo)
+- [npm package](https://www.npmjs.com/package/@macrobe/plus)
+- [GitHub Issues](https://github.com/ycmds/release-test-monorepo/issues)
+
+## 📝 License
+
+MIT © [Igor Suvorov](https://github.com/isuvorov)
 
 ---
 

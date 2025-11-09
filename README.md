@@ -1,36 +1,75 @@
-# 🦠 MacroBE - monorepo
+# 🦠 MacroBE Monorepo
 
-[![NPM version](https://badgen.net/npm/v/@macrobe/parallel)](https://www.npmjs.com/package/@macrobe/parallel)
-[![Tests](https://github.com/ycmds/release-test/actions/workflows/release.yml/badge.svg)](https://github.com/ycmds/release-test/actions/workflows/release.yml)
+[![Tests](https://github.com/ycmds/release-test-monorepo/actions/workflows/release.yml/badge.svg)](https://github.com/ycmds/release-test-monorepo/actions/workflows/release.yml)
 [![TypeScript + ESM](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://www.typescriptlang.org/)
-[![Install size](https://packagephobia.now.sh/badge?p=@macrobe/parallel)](https://packagephobia.now.sh/result?p=@macrobe/parallel)
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/@macrobe/parallel.svg)](https://bundlephobia.com/result?p=@macrobe/parallel)
-[![License](https://badgen.net/github/license/ycmds/release-test)](https://github.com/ycmds/release-test/blob/main/LICENSE)
+[![License](https://badgen.net/github/license/ycmds/release-test-monorepo)](https://github.com/ycmds/release-test-monorepo/blob/main/LICENSE)
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
-
 
 <div align="center">
   <p><strong>❤️‍🔥 The BEST modern 2026 example of release tools for nano libraries</strong></p>
 </div>
 
-
-**🚀 Modern**: Built with ESM modules and TypeScript    
-**🪶 Lightweight**: Tree-shakable functions for optimal bundle size (~0.4kb)   
-**💪 Type-safe**: Full TypeScript support with comprehensive type definitions    
-**⚡ Fast**: Optimized algorithms for maximum performance    
-**🎯 Focused**: Essential async utilities without bloat    
+**🚀 Modern**: Built with ESM modules and TypeScript  
+**🪶 Lightweight**: Tree-shakable functions for optimal bundle size  
+**💪 Type-safe**: Full TypeScript support with comprehensive type definitions  
+**⚡ Fast**: Optimized algorithms for maximum performance  
+**🎯 Focused**: Essential utilities without bloat  
 **📦 Zero Dependencies**: No external dependencies  
 
-```ts
-import { map } from '@macrobe/parallel';
+## 📦 Packages
 
-const results = await map([1, 2, 3], async (num) => num * 2);
-// => [2, 4, 6]
+| Package | Version | Size | Bundle Size | Description |
+|---------|---------|------|-------------|-------------|
+| **[@macrobe/plus]** | [![npm](https://badgen.net/npm/v/@macrobe/plus)](https://www.npmjs.com/package/@macrobe/plus) | [![install size](https://packagephobia.com/badge?p=@macrobe/plus)](https://packagephobia.com/result?p=@macrobe/plus) | [![bundle](https://img.shields.io/bundlephobia/minzip/@macrobe/plus.svg)](https://bundlephobia.com/result?p=@macrobe/plus) | Plus utility functions |
+| **[@macrobe/multiply]** | [![npm](https://badgen.net/npm/v/@macrobe/multiply)](https://www.npmjs.com/package/@macrobe/multiply) | [![install size](https://packagephobia.com/badge?p=@macrobe/multiply)](https://packagephobia.com/result?p=@macrobe/multiply) | [![bundle](https://img.shields.io/bundlephobia/minzip/@macrobe/multiply.svg)](https://bundlephobia.com/result?p=@macrobe/multiply) | Multiply utility functions |
+
+[@macrobe/plus]: ./libs/plus
+[@macrobe/multiply]: ./libs2/multiply
+
+## 🚀 Usage
+
+### @macrobe/plus
+
+```ts
+import { plus } from '@macrobe/plus';
+
+const result = plus(2, 3);
+// => 5
 ```
 
-## License
+### @macrobe/multiply
 
-MIT © [Igor Suvorov](https://github.com/isuvorov) 
+```ts
+import { multiply } from '@macrobe/multiply';
+
+const result = multiply(2, 3);
+// => 6
+```
+
+## 📖 Documentation
+
+- [**@macrobe/plus**](./libs/plus/README.md) - Plus utility functions
+- [**@macrobe/multiply**](./libs2/multiply/README.md) - Multiply utility functions
+
+## 🛠 Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Build all packages
+pnpm run build
+
+# Run tests
+pnpm run test
+
+# Run tests in watch mode
+pnpm run test:watch
+```
+
+## 📝 License
+
+MIT © [Igor Suvorov](https://github.com/isuvorov)
 
 ---
 
