@@ -14,6 +14,8 @@
   <p><strong>Simple plus utility function for TypeScript</strong></p>
 </div>
 
+<img src="https://github.com/ycmds/release-test-monorepo/raw/main/docs/logo.png" align="right" width="120" height="120" />
+
 **🚀 Modern**: Built with ESM modules and TypeScript  
 **🪶 Lightweight**: Tree-shakable functions for optimal bundle size  
 **💪 Type-safe**: Full TypeScript support with comprehensive type definitions  
