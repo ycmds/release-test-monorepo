@@ -1,3 +1,10 @@
+# [@macrobe/plus-v1.1.0](https://github.com/ycmds/release-test-monorepo/compare/@macrobe/plus-v1.0.0...@macrobe/plus-v1.1.0) (2025-11-09)
+
+
+### Features
+
+* prepare monorepo ([ef21a21](https://github.com/ycmds/release-test-monorepo/commit/ef21a21676afacab2ac3101b927223c2045c1dcf))
+
 # @macrobe/plus-v1.0.0 (2025-11-09)
 
 
