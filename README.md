@@ -1,4 +1,4 @@
-# 🦠 MacroBE - Parallel
+# 🦠 MacroBE - monorepo
 
 [![NPM version](https://badgen.net/npm/v/@macrobe/parallel)](https://www.npmjs.com/package/@macrobe/parallel)
 [![Tests](https://github.com/ycmds/release-test/actions/workflows/release.yml/badge.svg)](https://github.com/ycmds/release-test/actions/workflows/release.yml)

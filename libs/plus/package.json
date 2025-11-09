@@ -79,10 +79,10 @@
   "///": "//////////========================/////////========================/////////========================/////////",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ycmds/release-test.git"
+    "url": "git+https://github.com/ycmds/release-test-monorepo.git"
   },
-  "homepage": "https://github.com/ycmds/release-test",
-  "bugs": "https://github.com/ycmds/release-test/issues",
+  "homepage": "https://github.com/ycmds/release-test-monorepo",
+  "bugs": "https://github.com/ycmds/release-test-monorepo/issues",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
