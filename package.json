@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+!",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "                 pnpm -r dev",
     "build": "               pnpm -r build",
@@ -17,20 +17,14 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@size-limit/preset-small-lib": "^11.2.0",
-    "@types/node": "^24.9.1",
     "semantic-release-monorepo": "^8.0.2",
+    "@types/node": "^24.9.1",
     "semantic-release": "^25.0.1",
     "size-limit": "^11.2.0",
     "tsdown": "^0.15.11",
     "typescript": "5.9.3"
   },
   "//": "///////////========================/////////========================/////////========================/////////",
-  "files": [
-    "lib",
-    "cjs",
-    "LICENSE",
-    "README.md"
-  ],
   "release": {
     "branches": [
       "main"
@@ -49,7 +43,7 @@
             "pnpm-lock.yaml",
             "CHANGELOG.md"
           ],
-          "message": "chore(release): 🎉 v${nextRelease.version}\n\n${nextRelease.notes}\n\n[skip ci]"
+          "message": "chore(release): 🎉🎉 v${nextRelease.version}\n\n${nextRelease.notes}\n\n[skip ci]"
         }
       ]
     ]
