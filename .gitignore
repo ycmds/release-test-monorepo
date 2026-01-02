@@ -3,3 +3,4 @@ cjs/
 lib/
 lib-*/
 libs2
+__*

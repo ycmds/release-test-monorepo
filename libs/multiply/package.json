@@ -6,21 +6,21 @@
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
   "scripts": {
-    "build:tsdown:release": "tsdown --out-dir lib",
-    "build": "               npm run build:tsdown:release",
-    "build:all": "           npm run build:bunup && npm run build:tsup && npm run build:tsdown && npm run build:tsc",
+    "build:tsdown:release": "tsdown --out-dir lib --silent",
+    "build": "               pnpm run build:tsdown:release",
+    "build:all": "           pnpm run build:bunup && pnpm run build:tsup && pnpm run build:tsdown && pnpm run build:tsc",
     "dev": "                 tsdown --watch",
     "test:node": "           node --import=tsx --test test/*.test.ts",
     "test:node:watch": "     node --import=tsx --test --watch test/*.test.ts",
     "test:lint": "           biome lint",
     "test:size": "           size-limit",
-    "test": "                npm run test:lint && npm run test:node && npm run test:size",
-    "test:watch": "          npm run test:node:watch",
+    "test": "                pnpm run test:lint -- --silent && pnpm run test:node -- --silent && pnpm run test:size -- --silent",
+    "test:watch": "          pnpm run test:node:watch",
     "fix:lint": "            biome check --write",
-    "fix": "                 npm run fix:lint",
+    "fix": "                 pnpm run fix:lint",
     "version:patch": "       npm version patch && git push && git push --tags",
     "version:release": "     semantic-release --no-ci --dry-run ",
-    "release": "             npm run build && npm run test && npm run version:release && npm publish"
+    "release": "             pnpm run build && pnpm run test && pnpm run version:release && npm publish"
   },
   "dependencies": {
     "@macrobe/plus": "workspace:^"
