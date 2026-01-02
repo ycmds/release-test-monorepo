@@ -1,6 +1,6 @@
 {
-  "name": "@macrobe/plus",
-  "version": "1.2.0",
+  "name": "@macrobe/print",
+  "version": "1.0.0",
   "type": "module",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+!",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
@@ -46,18 +46,18 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "0.4kb"
+      "limit": "0.3kb"
     },
     {
-      "path": "lib/plus.js",
-      "limit": "0.4kb"
+      "path": "lib/print.js",
+      "limit": "0.3kb"
     }
   ],
   "///": "//////////========================/////////========================/////////========================/////////",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ycmds/release-test-monorepo.git",
-    "directory": "libs/plus"
+    "directory": "libs/print"
   },
   "homepage": "https://github.com/ycmds/release-test-monorepo",
   "bugs": "https://github.com/ycmds/release-test-monorepo/issues",

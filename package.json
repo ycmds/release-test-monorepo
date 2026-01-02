@@ -10,7 +10,8 @@
     "build": "               pnpm -r build",
     "test": "                pnpm -r test",
     "fix": "                 pnpm -r fix",
-    "release": "             echo ??" 
+    "release": "             pnpm -r exec -- npx --no-install semantic-release -e semantic-release-monorepo",
+    "release:dry": "         pnpm -r exec -- npx --no-install semantic-release -e semantic-release-monorepo --dry-run" 
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.1",
@@ -22,6 +23,7 @@
     "semantic-release": "^25.0.1",
     "size-limit": "^11.2.0",
     "tsdown": "^0.15.11",
+    "tsx": "^4.19.2",
     "typescript": "5.9.3"
   },
   "//": "///////////========================/////////========================/////////========================/////////",

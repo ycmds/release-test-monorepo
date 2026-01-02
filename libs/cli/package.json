@@ -1,6 +1,6 @@
 {
-  "name": "@macrobe/plus",
-  "version": "1.2.0",
+  "name": "@macrobe/cli",
+  "version": "1.0.0",
   "type": "module",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+!",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
@@ -13,14 +13,20 @@
     "test:node": "           node --import=tsx --test test/*.test.ts",
     "test:node:watch": "     node --import=tsx --test --watch test/*.test.ts",
     "test:lint": "           biome lint",
-    "test:size": "           size-limit",
-    "test": "                npm run test:lint && npm run test:node && npm run test:size",
+    "test": "                npm run test:lint && npm run test:node",
     "test:watch": "          npm run test:node:watch",
     "fix:lint": "            biome check --write",
     "fix": "                 npm run fix:lint",
     "version:patch": "       npm version patch && git push && git push --tags",
     "version:release": "     semantic-release --no-ci --dry-run ",
     "release": "             npm run build && npm run test && npm run version:release && npm publish"
+  },
+  "dependencies": {
+    "@macrobe/plus": "workspace:^",
+    "@macrobe/multiply": "workspace:^",
+    "@macrobe/format": "workspace:^",
+    "@macrobe/print": "workspace:^",
+    "yargs": "^17.7.2"
   },
   "//": "///////////========================/////////========================/////////========================/////////",
   "files": [
@@ -31,6 +37,9 @@
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "bin": {
+    "macrobe": "./lib/index.js"
+  },
   "exports": {
     ".": {
       "import": "./lib/index.js",
@@ -46,18 +55,14 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "0.4kb"
-    },
-    {
-      "path": "lib/plus.js",
-      "limit": "0.4kb"
+      "limit": "20kb"
     }
   ],
   "///": "//////////========================/////////========================/////////========================/////////",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ycmds/release-test-monorepo.git",
-    "directory": "libs/plus"
+    "directory": "libs/cli"
   },
   "homepage": "https://github.com/ycmds/release-test-monorepo",
   "bugs": "https://github.com/ycmds/release-test-monorepo/issues",
@@ -75,7 +80,8 @@
     "functional",
     "programming",
     "utils",
-    "helpers"
+    "helpers",
+    "cli"
   ],
   "////": "/////////========================/////////========================/////////========================/////////"
 }

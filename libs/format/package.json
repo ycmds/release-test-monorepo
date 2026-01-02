@@ -1,6 +1,6 @@
 {
-  "name": "@macrobe/plus",
-  "version": "1.2.0",
+  "name": "@macrobe/format",
+  "version": "1.0.0",
   "type": "module",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+!",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
@@ -21,6 +21,9 @@
     "version:patch": "       npm version patch && git push && git push --tags",
     "version:release": "     semantic-release --no-ci --dry-run ",
     "release": "             npm run build && npm run test && npm run version:release && npm publish"
+  },
+  "dependencies": {
+    "@macrobe/plus": "workspace:^"
   },
   "//": "///////////========================/////////========================/////////========================/////////",
   "files": [
@@ -46,18 +49,18 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "0.4kb"
+      "limit": "0.5kb"
     },
     {
-      "path": "lib/plus.js",
-      "limit": "0.4kb"
+      "path": "lib/format.js",
+      "limit": "0.5kb"
     }
   ],
   "///": "//////////========================/////////========================/////////========================/////////",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ycmds/release-test-monorepo.git",
-    "directory": "libs/plus"
+    "directory": "libs/format"
   },
   "homepage": "https://github.com/ycmds/release-test-monorepo",
   "bugs": "https://github.com/ycmds/release-test-monorepo/issues",
