@@ -4,3 +4,4 @@ lib/
 lib-*/
 libs2
 __*
+.pnpm-store
